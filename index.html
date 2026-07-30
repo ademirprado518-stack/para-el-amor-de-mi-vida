@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Día a la Mejor Novia del Mundo</title>
+  <link rel="stylesheet" href="animaciones y texturas.css">
+</head>
+<body>
+  <div class="fondo">
+    <h1 class="titulo">Feliz Día a la Mejor<br>Novia del Mundo</h1>
+    <div class="mensaje" id="mensaje"></div>
+    <div class="planeta" id="planeta" title="Haz clic 💜"></div>
+    <canvas id="canvas"></canvas>
+
+    <!-- Carta especial -->
+    <div class="carta-especial" id="cartaEspecial">
+      
+      <!-- PANTALLA 1: Carta de amor -->
+      <div class="carta-pantalla" id="pantalla1">
+        <div class="carta-contenido carta-amor">
+          <h2>Para ti mi amor 💌</h2>
+          <p>
+            Eres la razón de mi sonrisa todos los días.<br>
+            Gracias por existir y por amarme como lo haces.<br>
+            Quiero pasar el resto de mi vida a tu lado.<br><br>
+            Te amo con todo mi corazón ❤️
+          </p>
+          <div class="botones-carta">
+            <button class="btn-cerrar" id="cerrarCarta">Cerrar</button>
+            <button class="btn-siguiente" id="btnSiguiente">Siguiente →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANTALLA 2: Corazón + carga + foto -->
+      <div class="carta-pantalla" id="pantalla2" style="display:none;">
+        <div class="carta-contenido">
+          <div class="corazon-grande" id="corazonGrande">❤️</div>
+
+          <img src="img/ddd.jpeg" id="fotoFinal" class="foto-final" style="display:none;" alt="foto">
+
+          <div class="barra-container" id="barraContainer">
+            <div class="barra">
+              <div class="barra-relleno" id="barraRelleno"></div>
+            </div>
+            <span class="porcentaje" id="porcentaje">0%</span>
+          </div>
+
+          <p class="texto-cargando" id="textoCargando">Cargando...</p>
+
+          <p class="mensaje-error" id="mensajeError" style="display:none;">
+            ups no carga, no hay mucho amor 😢
+          </p>
+
+          <button class="btn-microfono" id="btnMicrofono" style="display:none;">
+            🎤 Di "te amo"
+          </button>
+
+          <button class="btn-cerrar" id="cerrarCarta2" style="display:none;">Cerrar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <audio id="musica" loop>
+    <source src="music/virlan_garcia_mmxx_s_video_oficial_mp3_13381.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="audioTeAmo">
+    <source src="music/WhatsApp Ptt 2026-07-29 at 6.02.40.mp3" type="audio/mpeg">
+  </audio>
+
+  <video id="videoBeso" muted loop playsinline style="display:none;">
+    <source src="video/BESO 1.mp4" type="video/mp4">
+  </video>
+
+  <script src="java.js"></script>
+</body>
+</html>
